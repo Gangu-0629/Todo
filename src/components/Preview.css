@@ -1,0 +1,48 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,600&display=swap');
+.outerbox{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+}
+.myclear{
+    background-color: red;
+    width:50%;
+
+}
+.deletebutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mywork,.mytime,.mydate{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.deletebutton:hover{
+    cursor: pointer;
+}
+.mywork{
+    width:50%;
+}
+.mytime{
+    width:15%;
+
+}
+.mydate{
+    width:15%;
+}
+
+.Myitem{
+    width:80vw;
+    font-family: 'Playfair', serif;
+    background-color: #0002A1;
+    color:#FB2576;
+    display: flex;
+    justify-content: space-evenly;
+    margin:5px;
+    border-radius: 20px;
+    gap:20px;
+}
