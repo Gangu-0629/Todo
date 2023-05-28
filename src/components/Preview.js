@@ -1,5 +1,4 @@
 import React from 'react'
-import './Preview.css'
 import List from './List';
 
 
@@ -39,7 +38,7 @@ export default function Preview(props) {
 
       
     })}
-    <button type="button" name="" id="" onClick={props.clearall} class="btn btn-primary btn-lg btn-block myclear">Clear all</button>
+    <button type="button" name="" id="" onClick={props.clearall} class="btn btn-primary btn-lg btn-block myclear">CLEAR ALL TASKS</button>
   </div>
   </>
 );

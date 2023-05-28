@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Preview from './components/Preview';
+import Home from './components/Home';
 
 // const getlocaldata=()=>{
 //   let list=localStorage.getItem("Tasks");
@@ -110,6 +111,9 @@ setworkList([]);
         <Navbar mode={mode} toggle={changeMode} />
         
         <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
           <Route exact path="/addwork">
           
             <Todo worklist={worklist} work={work} time={time} date={date} show={show} ondatechange={ondatechange} ontimechange={ontimechange} onworkchange={onworkchange} />

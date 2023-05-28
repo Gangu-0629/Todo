@@ -1,38 +1,255 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+.Hcon{
+  margin: 2%;
   display: flex;
-  flex-direction: column;
+  width:96%;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+}
+.Habout{
+
+  margin:2%;  
+  padding:10px;
+    display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 80vh;
+  width:40%;
+  align-items: center;
+ 
+}
+.Habout h1{
+ color: blue;
+  font-family: 'Foldit', cursive;
+  font-size: 4rem;
+}
+.Habout p{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+}
+.Hpic{
+  background-color: rgb(233, 233, 233);
+  display: flex;
+ margin:2%;
+  height: 80vh;
+  width:40%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 100%;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.mycal{
+  width:60%;
+  height:60%;
+  transform: rotatey(40deg);
+  transform: rotateZ(5deg);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mycal:hover{
+  transform: rotatey(0deg);
+  transition: linear;
+}
+.mypen{
+  height:40%;
+  transition: linear;
+  animation-name: penanimate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes penanimate {
+  0%{
+    transform: rotateZ(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform: rotateZ(160deg);
+  }
+}
+
+.mytodo {
+ 
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+}
+.mytodo h1{
+  font-size: 4rem;
+  margin:20px;
+  text-align: center;
+  font-family: 'Foldit', cursive;
+}
+.mytodo label{
+  font-size: 1.5rem;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.mytodobutton{
+  width:200px;
+}
+.outerbox h1{
+  text-align: center;
+  font-family: 'Foldit', cursive;
+}
+.itemcon{
+  font-size: 1.4rem;
+  border: 2px solid red;
+  margin:10px;
+  border-radius: 20px;
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  flex-direction: row;
+background-color: rgb(50, 50, 254);
+  padding:1%;
+  gap:1%;
+  box-shadow: 5px 5px 10px blue;
+}
+
+.itemcon .itemwork{
+  display: flex;
+  flex-wrap: wrap;
+  margin:2px;
+  
+  padding:2px;
+  border-radius: 20px;
+  width:55vw;
+ 
+}
+.itemcon .itemtime{
+  overflow: hidden  ;
+  display: flex;
+  flex-wrap: wrap;
+  margin:2px;
+  padding:2px;
+  border-radius: 20px;
+  align-items: center;
+  width:15vw;
+
+}
+.itemcon .itemdate{
+  overflow: hidden  ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin:2px;
+  padding:2px;
+  border-radius: 20px;
+  width:15vw;
+
+}
+.itemcon .itembutton{
+  margin:2px;
+
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:5vw;
+
+}
+.myclear{
+  margin:10px;
+  background-color: rgb(51, 51, 255);
+  position: absolute;
+  left:50%;
+  transform: translate(-50%);
+  box-shadow: 5px 5px 10px red;
+}
+.myclear:hover{
+  background-color: rgb(252, 0, 0);
+  color: rgb(249, 247, 220);
+  box-shadow: 5px 5px 10px rgb(30, 0, 255);
+}
+.itemcon .itembutton:hover{
+cursor: pointer;
+}
+.itemcon p b{
+  color:red;
+}
+.myaddbtn{
+  margin: 10px;
+  box-shadow: 5px 5px 10px blue;
+}
+.myviewbtn{
+  margin: 10px;
+  box-shadow: 5px 5px 10px blue;
+  
+
+}
+.myviewbtn:hover{
+background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+  .Hcon{
+    flex-direction: column;
+  }
+  .Habout{
+    height:60vh;
+    width:80%;
+  }
+  .Hpic{
+    height:60vh;
+    border-radius: 50%;
+    width:80%;
+  }
+  .mypen{
+    height:20%;
+  }
+  .Habout h1{
+    font-size: 1rem;
+  }
+  .Habout p{
+    font-size: 0.7rem;
+  }
+  .mytodo h1{
+    font-size: 1.5rem;
+  }
+  .mytodo label{
+    font-size: 0.8rem;
+  }
+  .itemcon{
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+  .itemcon .itemwork{
+    width:100vw;
+  }
+  .itemcon .itemtime{
+    overflow: hidden  ;
+    width:40vw;
+  }
+  .itemcon .itemdate{
+    overflow: hidden  ;
+    width:40vw;
+  }
+  .itemcon .itembuttton{
+    width:10vw;
+  }
+ 
+}
+
+@media screen and (max-width: 450px) {
+  .itemcon .itemtime{
+
+    width:35vw;
+  }
+  .itemcon .itemdate{
+    width:35vw;
+  }
+  .itemcon .itembuttton{
+    width:15vw;
   }
 }
