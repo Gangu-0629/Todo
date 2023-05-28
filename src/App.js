@@ -111,9 +111,8 @@ setworkList([]);
         <Navbar mode={mode} toggle={changeMode} />
         
         <Switch>
-          <Route exact path="/Todo">
-            <Home/>
-          </Route>
+          
+          
           <Route exact path="/addwork">
           
             <Todo worklist={worklist} work={work} time={time} date={date} show={show} ondatechange={ondatechange} ontimechange={ontimechange} onworkchange={onworkchange} />
@@ -125,6 +124,12 @@ setworkList([]);
              />
            
           </Route>
+          <Route exact path="/">
+            <Home/>
+            </Route>
+            <Route exact path="/Todo">
+              <Home/>
+            </Route>
         </Switch>
       </Router>
     </>
