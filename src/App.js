@@ -111,7 +111,7 @@ setworkList([]);
         <Navbar mode={mode} toggle={changeMode} />
         
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/Todo">
             <Home/>
           </Route>
           <Route exact path="/addwork">
