@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Todo from './components/Todo';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
